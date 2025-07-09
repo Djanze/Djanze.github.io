@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cameroun Travail en Ligne - Gagnez de l'argent en ligne</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        /* Section 1 - Hero */
+        .hero {
+            background: linear-gradient(135deg, #0d6efd, #0b5ed7);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+            border-radius: 0 0 30px 30px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+        
+        .logo {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        
+        .logo i {
+            color: #ffd43b;
+        }
+        
+        .tagline {
+            font-size: 1.4rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            margin: 30px 0 20px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: rgba(255, 255, 255, 0.5);
+        }
+        
+        .hero p {
+            max-width: 600px;
+            margin: 0 auto 25px;
+            font-size: 1.1rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: #ffd43b;
+            color: #333;
+            text-decoration: none;
+            padding: 14px 35px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            margin-top: 15px;
+        }
+        
+        .btn:hover {
+            background: #ffca2c;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+        }
+        
+        /* Section 2 - Contact & Features */
+        .contact-section {
+            background: white;
+            padding: 40px 25px;
+            border-radius: 30px;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+            margin-bottom: 30px;
+        }
+        
+        .contact-title {
+            text-align: center;
+            font-size: 1.7rem;
+            margin-bottom: 25px;
+            color: #0d6efd;
+        }
+        
+        .whatsapp-contact {
+            background: #25d366;
+            color: white;
+            padding: 15px;
+            border-radius: 15px;
+            text-align: center;
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            box-shadow: 0 4px 10px rgba(37, 211, 102, 0.3);
+        }
+        
+        .features {
+            margin: 35px 0;
+        }
+        
+        .features-title {
+            text-align: center;
+            font-size: 1.6rem;
+            margin-bottom: 25px;
+            color: #333;
+        }
+        
+        .feature-list {
+            list-style: none;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        
+        .feature-item {
+            padding: 15px 20px;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            background: #f8f9fa;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            border-left: 4px solid #0d6efd;
+            transition: transform 0.3s ease;
+        }
+        
+        .feature-item:hover {
+            transform: translateX(5px);
+            background: #e9f0ff;
+        }
+        
+        .feature-item i {
+            font-size: 1.2rem;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: #0d6efd;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .feature-item.checked i {
+            background: #198754;
+        }
+        
+        .cameroon-specific {
+            text-align: center;
+            font-style: italic;
+            margin: 25px 0;
+            padding: 15px;
+            background: #fff3cd;
+            border-radius: 10px;
+            color: #856404;
+            font-weight: 500;
+            border-left: 4px solid #ffc107;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 25px;
+            font-size: 0.9rem;
+            color: #6c757d;
+            border-top: 1px solid #eee;
+            margin-top: 20px;
+        }
+        
+        /* Responsive Design */
+        @media (min-width: 768px) {
+            .hero {
+                padding: 80px 40px;
+            }
+            
+            .logo {
+                font-size: 3rem;
+            }
+            
+            .tagline {
+                font-size: 1.6rem;
+            }
+            
+            .section-title {
+                font-size: 2.2rem;
+            }
+            
+            .contact-section {
+                padding: 50px;
+            }
+            
+            .content-wrapper {
+                display: flex;
+                gap: 40px;
+                max-width: 1000px;
+                margin: 0 auto;
+            }
+            
+            .contact-part {
+                flex: 1;
+            }
+            
+            .features-part {
+                flex: 1;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .logo {
+                font-size: 1.8rem;
+            }
+            
+            .tagline {
+                font-size: 1.1rem;
+            }
+            
+            .section-title {
+                font-size: 1.5rem;
+            }
+            
+            .btn {
+                padding: 12px 25px;
+                font-size: 1rem;
+            }
+            
+            .whatsapp-contact {
+                font-size: 1.1rem;
+                padding: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Section 1: Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-laptop-house"></i>
+                Cameroun Travail en Ligne
+            </div>
+            <p class="tagline">Gagnez de l'argent en ligne depuis le Cameroun</p>
+            
+            <div class="divider"></div>
+            
+            <h2 class="section-title">Opportunité d'emploi en ligne</h2>
+            
+            <p>Si vous voulez travailler en ligne au Cameroun et vous faire de l'argent, inscrivez-vous maintenant en cliquant sur le lien ci-dessous :</p>
+            
+            <a href="https://cbfkk.com/#/register/ETMW15RH" class="btn">
+                <i class="fas fa-user-plus"></i> S'inscrire maintenant
+            </a>
+        </div>
+    </section>
+    
+    <!-- Section 2: Contact & Features -->
+    <section class="container">
+        <div class="contact-section">
+            <h2 class="contact-title">Besoin d'aide ?</h2>
+            
+            <div class="content-wrapper">
+                <div class="contact-part">
+                    <div class="whatsapp-contact">
+                        <i class="fab fa-whatsapp"></i> WhatsApp : 694011418
+                    </div>
+                    
+                    <div class="cameroon-specific">
+                        <i class="fas fa-flag"></i> Spécialement conçu pour le Cameroun
+                    </div>
+                </div>
+                
+                <div class="features-part">
+                    <h3 class="features-title">Pourquoi nous choisir ?</h3>
+                    
+                    <ul class="feature-list">
+                        <li class="feature-item">
+                            <i class="fas fa-square"></i>
+                            <span>Travail 100% en ligne</span>
+                        </li>
+                        <li class="feature-item checked">
+                            <i class="fas fa-check-square"></i>
+                            <span>Depuis le confort de votre domicile</span>
+                        </li>
+                        <li class="feature-item">
+                            <i class="fas fa-square"></i>
+                            <span>Revenus attractifs</span>
+                        </li>
+                        <li class="feature-item">
+                            <i class="fas fa-square"></i>
+                            <span>Opportunités de croissance</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer">
+                © 2024 Cameroun Travel en Ligne. Tous droits réservés.
+            </div>
+        </div>
+    </section>
+    
+    <script>
+        // Animation pour les éléments de la page
+        document.addEventListener('DOMContentLoaded', function() {
+            // Animation pour le bouton
+            const btn = document.querySelector('.btn');
+            btn.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-3px)';
+            });
+            btn.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+            });
+            
+            // Animation pour les éléments de la liste
+            const featureItems = document.querySelectorAll('.feature-item');
+            featureItems.forEach(item => {
+                item.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateX(5px)';
+                });
+                item.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateX(0)';
+                });
+            });
+            
+            // Effet de pulsation pour le contact WhatsApp
+            const whatsapp = document.querySelector('.whatsapp-contact');
+            setInterval(() => {
+                whatsapp.style.boxShadow = '0 0 0 0 rgba(37, 211, 102, 0.7)';
+                setTimeout(() => {
+                    whatsapp.style.boxShadow = '0 0 0 10px rgba(37, 211, 102, 0)';
+                }, 500);
+            }, 1500);
+        });
+    </script>
+</body>
+</html>
